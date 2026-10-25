@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>卷藏 · 隐私政策</title>
+<style>
+  body { font-family: -apple-system, "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+         color: #2b2b28; background: #f3f0e7; margin: 0; }
+  .page { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .sub { color: #8a867a; font-size: 13px; margin-bottom: 28px; }
+  h2 { font-size: 18px; margin: 28px 0 10px; padding-left: 10px; border-left: 4px solid #b04e44; }
+  p, li { font-size: 15px; line-height: 1.8; }
+  ul { padding-left: 22px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 8px 0; background: #fff; }
+  th, td { border: 1px solid #ddd8c8; padding: 8px 10px; text-align: left; line-height: 1.6; }
+  th { background: #eee9da; }
+  .card { background: #fff; border: 1px solid #e4dfcf; border-radius: 10px; padding: 14px 16px; margin: 10px 0; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>卷藏 · 隐私政策</h1>
+  <div class="sub">更新日期：2026年10月25日 · 适用于「卷藏」HarmonyOS 客户端（com.wenku8.harmony）</div>
+
+  <div class="card"><b>一句话摘要：</b>「卷藏」不需要注册、不申请任何个人信息权限、不上传任何数据到开发者的服务器。你的书架、缓存、阅读记录只保存在你的设备本地。</div>
+
+  <h2>一、我们收集哪些信息</h2>
+  <p><b>不收集。</b>本应用没有账号体系，不注册、不登录，不申请位置、通讯录、相册、麦克风、摄像头等任何涉及个人信息的权限，不包含任何统计 SDK 或广告 SDK，不向开发者或任何第三方上传你的使用数据。</p>
+
+  <h2>二、应用如何使用网络</h2>
+  <p>应用在联网时仅向以下第三方服务发起普通 HTTP(S) 请求，用于获取阅读内容与朗读语音：</p>
+  <table>
+    <tr><th>服务</th><th>用途</th><th>涉及数据</th></tr>
+    <tr><td>轻小说文库（wenku8.net）</td><td>获取书籍列表、详情、目录与正文</td><td>仅书籍 ID、章节 ID 等内容参数，不含个人信息</td></tr>
+    <tr><td>Microsoft Edge 朗读服务（speech.platform.bing.com）</td><td>听书功能：将你正在阅读的章节文本转换为语音</td><td>当前章节的文本内容（仅在使用听书功能时）</td></tr>
+    <tr><td>图片服务（img.wenku8.com）</td><td>加载书籍封面与插图</td><td>图片资源地址，不含个人信息</td></tr>
+  </table>
+  <p>上述请求由系统网络框架直接发起，应用不附加任何设备标识、不携带任何身份凭证。</p>
+
+  <h2>三、存储在本机的数据</h2>
+  <ul>
+    <li>书架收藏、阅读进度、阅读偏好设置——保存在应用沙箱内；</li>
+    <li>离线缓存与导入的本地 TXT/EPUB 文件——保存在应用沙箱内；</li>
+    <li>你可以在「设置 → 数据管理」中随时清除全部数据，卸载应用即彻底删除。</li>
+  </ul>
+
+  <h2>四、权限说明</h2>
+  <table>
+    <tr><th>权限</th><th>类型</th><th>用途</th></tr>
+    <tr><td>ohos.permission.INTERNET</td><td>系统授权</td><td>访问上述在线书源与语音服务</td></tr>
+    <tr><td>ohos.permission.GET_NETWORK_INFO</td><td>系统授权</td><td>检测网络连接状态，决定是否回退离线数据</td></tr>
+    <tr><td>ohos.permission.VIBRATE</td><td>系统授权</td><td>翻页时的触感反馈（可在设置中关闭）</td></tr>
+    <tr><td>ohos.permission.KEEP_BACKGROUND_RUNNING</td><td>系统授权</td><td>听书时保持后台播放（长按任务卡片可停止）</td></tr>
+  </table>
+  <p>以上均为系统授权类权限，无需用户手动同意弹窗，也不涉及个人信息。</p>
+
+  <h2>五、未成年人保护</h2>
+  <p>本应用不向未成年人收集任何信息，也不包含任何社交、支付功能。</p>
+
+  <h2>六、政策更新与联系方式</h2>
+  <p>如本政策发生实质性变更，将在应用更新时同步修改更新日期。</p>
+  <p>如果你对本政策或应用的数据处理方式有任何疑问，请联系：<b>3964427560@qq.com</b>。</p>
+</div>
+</body>
+</html>
